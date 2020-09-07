@@ -73,7 +73,7 @@ class CameraStream:
                 if ret:
                     # resize image - less computing power
                     if resize_image:
-                    image = cv2.resize(image, (width, height))
+                        image = cv2.resize(image, (width, height))
 
                     image, firstFrame, nextFrame, time_static_frame_change = \
                         self.detect_movement(image, firstFrame, nextFrame, static_frame_change_time)
